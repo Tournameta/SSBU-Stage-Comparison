@@ -1,0 +1,16 @@
+{
+	"short_name": "Stages",
+	"name": "Super Smash Bros. Ultimate Stage Comparison Tool",
+	"icons": [
+		{
+			"src": "../images/icons/stage-comparison.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		}
+	],
+	"start_url": "/stage-comparison/",
+	"background_color": "#333333",
+	"display": "standalone",
+	"scope": "/stage-comparison/",
+	"theme_color": "#333333"
+}

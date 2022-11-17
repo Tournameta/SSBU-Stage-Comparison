@@ -1,0 +1,171 @@
+@font-face
+{
+	font-family: 'FontAwesome';
+	src: url('../fonts/fa-regular-400.woff2') format('woff2');
+}
+
+@font-face
+{
+	font-family: 'FontAwesome';
+	src: url('../fonts/fa-brands-400.woff2') format('woff2');
+}
+
+.fa
+{
+	font-family: 'FontAwesome';
+}
+
+body
+{
+	margin: 0;
+	overflow: hidden;
+	font-family: sans-serif;
+	background-color: #333;
+	/*background-color: black;*/
+	color: white;
+	font-size: 15px;
+}
+
+body, canvas
+{
+	width: 100vw;
+	height: 100vh;
+}
+
+#options
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 5px;
+	min-height: 100px;
+	min-width: 100px;
+	max-height: 100vh;
+	overflow-y: auto;
+}
+
+#options>*
+{
+	padding-bottom: 10px;
+}
+
+#toggleOptions::before
+{
+	content: "\f2d3";
+}
+
+.hide #toggleOptions::before
+{
+	content: "\f013";
+}
+
+.hide #buttons>*:not(#toggleOptions)
+{
+	display: none;
+}
+
+#stagelist>*:first-child
+{
+	padding-bottom: 5px;
+}
+
+label
+{
+	display: block;
+}
+
+label>*
+{
+	vertical-align: bottom;
+}
+
+button, [type=checkbox]
+{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+[type=checkbox]
+{
+	box-sizing: border-box;
+	width: 12px;
+	height: 12px;
+	border-radius: 0;
+	border: 1px solid #aaa;
+	padding: 0 4px;
+	display: inline-block;
+	/*background-color: #777;*/
+	color: white;
+}
+
+[type=checkbox]:checked
+{
+	background-color: #fff;
+}
+
+[type="number"]
+{
+	width: 60px;
+}
+
+#buttons
+{
+	position: absolute;
+	width: 100px;
+	text-align: right;
+	top: 5px;
+	right: 5px;
+	z-index: 5;
+}
+
+button
+{
+	background-color: transparent;
+	color: white;
+	border: none;
+	width: 24px;
+	height: 24px;
+	font-size: 20px;
+	outline: none;
+	padding: 0;
+}
+
+button:hover
+{
+	color: #ddd;
+}
+
+button:active
+{
+	color: #aaa;
+}
+
+select
+{
+	width: 130px;
+}
+
+#downloadButton
+{
+	display: none;
+}
+
+#options.hide>*:not(:first-child)
+{
+	display: none;
+}
+
+#options:not(.showStats) .stat
+{
+	display: none;
+}
+
+.showStats #stagelist label
+{
+	padding: 3px 0;
+}
+
+.stat
+{
+	font-size: 10px;
+}
